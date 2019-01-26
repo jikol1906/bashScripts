@@ -1,0 +1,51 @@
+#!/bin/bash
+
+
+function createFunctionalComponent() {
+
+	echo "import React from 'react';
+
+	const $var = props => {
+
+		return (
+			<div>
+	    
+			</div>
+			);
+
+
+	}
+
+	export default $var;" > $var.js
+}
+
+function createClassBasedComponent() {
+
+
+echo "import React, {Component} from 'react';
+
+class $var extends Component {
+
+    render() {
+        return (
+            <div>
+
+            </div>
+        );
+    };
+} 
+
+export default $var;" > $var.js
+
+}
+
+
+
+for var in "$@" 
+do
+
+ createFunctionalComponent "$var"
+
+done
+
+

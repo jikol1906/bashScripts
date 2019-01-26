@@ -1,0 +1,9 @@
+#!/bin/bash
+
+function Hello() {
+	
+ echo "hello"
+
+}
+
+Hello

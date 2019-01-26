@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+if !  [ -d "billeder"  ]
+then
+ mkdir billeder
+fi
+
+mv *.{jpg,png,jpeg} billeder/
